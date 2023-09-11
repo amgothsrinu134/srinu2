@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <!---custom style sheet line-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="current_playing">
+        <div class="spotify">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <p class="heading" >
+            CURRENTLY PLAYING
+        </p>
+    </div>
+    <div class="loader">
+        <div class="song">
+            <p class="name">time in a bottle</p>
+            <p class="artist">jim in corce</p>
+        </div>
+        <div class="album_cover"></div>
+        <div class="loading">
+            <div class="load"></div>
+            <div class="load"></div>
+            <div class="load"></div>
+            <div class="load"></div>
+        </div>
+
+    </div>
+    <div class="loader">
+        <div class="song">
+            <p class="name">My Way</p>
+            <p class="artist">fraank sinatra</p>
+        </div>
+        <div class="album_cover"></div>
+        <div class="play"></div>
+
+    </div>
+    <div class="loader">
+        <div class="song">
+            <p class="name">Lemon Tree</p>
+            <p class="artist">Fools</p>
+        </div>
+        <div class="album_cover"></div>
+        <div class="play"></div>
+
+    </div>
+
+   
+  </div>  
+</body>
+</html>
